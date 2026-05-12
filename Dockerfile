@@ -22,7 +22,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # App port (can be overridden by Spring)
-EXPOSE 8080
+EXPOSE 8085
 
 # Security (non-root)
 RUN useradd -ms /bin/bash appuser
